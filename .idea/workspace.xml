@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38be7276-fda2-438f-87c0-ebd963da002e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/model/RomanNumber.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/model/RomanNumberTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -21,9 +22,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertToNumericUseCase.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertToNumericUseCaseTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,26 +58,38 @@
       <file leaf-file-name="ConvertRomanToArabicUseCase.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="45" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="106">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvertArabicToRomanUseCase.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConvertArabicToRomanUseCase.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="282">
+              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvertArabicToRomanUseCaseTest.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RomanNumber.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/model/RomanNumber.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+              <folding>
+                <element signature="e#55#250#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConvertArabicToRomanUseCaseTest.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="390">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="56" />
               <folding>
                 <element signature="e#60#108#0" expanded="true" />
               </folding>
@@ -79,38 +100,35 @@
       <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+            <state relative-caret-position="150">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UseCase.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/UseCase.kt">
+      <file leaf-file-name="MainContract.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="210">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="MainPresenter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            <state relative-caret-position="240">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExampleUnitTest.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/ExampleUnitTest.kt">
+      <file leaf-file-name="MainPresenterTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="17" />
-              <folding>
-                <element signature="e#42#90#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -118,11 +136,8 @@
       <file leaf-file-name="ConvertRomanToArabicUseCaseTest.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" />
-              <folding>
-                <element signature="e#62#110#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="199">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -133,10 +148,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jupiter</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2494,22 +2515,31 @@
         <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/ConvertToNumericUseCaseTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/UseCase.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/ConvertToNumericUseCase.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertToNumericUseCaseTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertToNumericUseCase.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.groovy" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.java" />
+        <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/model/RomanNumberTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/model/RomanNumber.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/model/RomanNumberTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1920" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="-1772" />
+    <option name="y" value="130" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -2519,7 +2549,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2543,25 +2572,14 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="romannumeralandroid" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="interactor" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="roman-numeral-android" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="romannumeralandroid" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roman-numeral-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="romannumeralandroid" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roman-numeral-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="romannumeralandroid" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="interactor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2572,28 +2590,36 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="device.picker.selection" value="Nexus_5X_API_25" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="crobicha.com.romannumeralandroid.domain.model" />
+      <recent name="crobicha.com.romannumeralandroid.presentation" />
       <recent name="crobicha.com.romannumeralandroid.domain.interactor" />
       <recent name="crobicha.com.romannumeralandroid.domain" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="crobicha.com.romannumeralandroid.domain.model" />
       <recent name="crobicha.com.romannumeralandroid.domain.interactor" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2608,7 +2634,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.ConvertArabicToRomanUseCaseTest">
+  <component name="RunManager" selected="Android JUnit.romannumeralandroid in app">
     <configuration name="ConvertArabicToRomanUseCaseTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -2631,10 +2657,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ConvertRomanToArabicUseCaseTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
@@ -2659,7 +2681,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ConvertRomanToArabicUseCaseTest.testSingleChars" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConvertRomanToArabicUseCaseTest.testEdgeCases" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -2671,7 +2693,34 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="crobicha.com.romannumeralandroid.domain.interactor" />
       <option name="MAIN_CLASS_NAME" value="crobicha.com.romannumeralandroid.domain.interactor.ConvertRomanToArabicUseCaseTest" />
-      <option name="METHOD_NAME" value="testSingleChars" />
+      <option name="METHOD_NAME" value="testEdgeCases" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumberTest.testChangeValue" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="crobicha.com.romannumeralandroid.domain.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crobicha.com.romannumeralandroid.domain.model" />
+      <option name="MAIN_CLASS_NAME" value="crobicha.com.romannumeralandroid.domain.model.RomanNumberTest" />
+      <option name="METHOD_NAME" value="testChangeValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -2700,6 +2749,28 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
+      <patterns />
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="romannumeralandroid in app" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <dir value="$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid" />
       <patterns />
       <method>
         <option name="Make" enabled="false" />
@@ -2787,14 +2858,18 @@
     <list>
       <item itemvalue="Android App.app" />
       <item itemvalue="Android JUnit.ConvertRomanToArabicUseCaseTest" />
-      <item itemvalue="Android JUnit.ConvertRomanToArabicUseCaseTest.testSingleChars" />
       <item itemvalue="Android JUnit.ConvertArabicToRomanUseCaseTest" />
+      <item itemvalue="Android JUnit.RomanNumberTest.testChangeValue" />
+      <item itemvalue="Android JUnit.ConvertRomanToArabicUseCaseTest.testEdgeCases" />
+      <item itemvalue="Android JUnit.romannumeralandroid in app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.romannumeralandroid in app" />
         <item itemvalue="Android JUnit.ConvertArabicToRomanUseCaseTest" />
         <item itemvalue="Android JUnit.ConvertRomanToArabicUseCaseTest" />
-        <item itemvalue="Android JUnit.ConvertRomanToArabicUseCaseTest.testSingleChars" />
+        <item itemvalue="Android JUnit.ConvertRomanToArabicUseCaseTest.testEdgeCases" />
+        <item itemvalue="Android JUnit.RomanNumberTest.testChangeValue" />
       </list>
     </recent_temporary>
   </component>
@@ -2812,34 +2887,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 05m 59s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
+    <history-entry file="ConvertRomanToArabicUseCaseTest - 2018.12.21 at 12h 12m 30s.xml">
+      <configuration name="ConvertRomanToArabicUseCaseTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 06m 10s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
+    <history-entry file="RomanNumberTest - 2018.12.21 at 15h 15m 45s.xml">
+      <configuration name="RomanNumberTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 13m 34s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
+    <history-entry file="RomanNumberTest - 2018.12.21 at 15h 25m 25s.xml">
+      <configuration name="RomanNumberTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 19m 09s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
+    <history-entry file="RomanNumberTest_testChangeValue - 2018.12.21 at 15h 27m 49s.xml">
+      <configuration name="RomanNumberTest.testChangeValue" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest_testSingleChars - 2018.12.20 at 15h 31m 20s.xml">
-      <configuration name="ConvertToNumericUseCaseTest.testSingleChars" configurationId="AndroidJUnit" />
+    <history-entry file="RomanNumberTest_testChangeValue - 2018.12.21 at 15h 28m 02s.xml">
+      <configuration name="RomanNumberTest.testChangeValue" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 31m 27s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 42m 01s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="ConvertToNumericUseCaseTest - 2018.12.20 at 15h 43m 38s.xml">
-      <configuration name="ConvertToNumericUseCaseTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="ConvertArabicToRomanUseCaseTest - 2018.12.20 at 16h 25m 31s.xml">
+    <history-entry file="ConvertArabicToRomanUseCaseTest - 2018.12.21 at 15h 35m 51s.xml">
       <configuration name="ConvertArabicToRomanUseCaseTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="ConvertArabicToRomanUseCaseTest - 2018.12.20 at 16h 31m 24s.xml">
+    <history-entry file="ConvertRomanToArabicUseCaseTest_testEdgeCases - 2018.12.21 at 16h 08m 30s.xml">
+      <configuration name="ConvertRomanToArabicUseCaseTest.testEdgeCases" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ConvertRomanToArabicUseCaseTest_testEdgeCases - 2018.12.21 at 16h 13m 02s.xml">
+      <configuration name="ConvertRomanToArabicUseCaseTest.testEdgeCases" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ConvertRomanToArabicUseCaseTest - 2018.12.21 at 16h 13m 19s.xml">
+      <configuration name="ConvertRomanToArabicUseCaseTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ConvertArabicToRomanUseCaseTest - 2018.12.21 at 16h 13m 56s.xml">
       <configuration name="ConvertArabicToRomanUseCaseTest" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
@@ -2851,7 +2926,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="2" sideWeight="0.5015528" side_tool="true" visible="true" weight="0.20340788" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
@@ -2861,8 +2936,8 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2736954" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.25104168" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.20340788" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.203125" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
@@ -2890,6 +2965,200 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#60#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/model/RomanNumber.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#55#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#60#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/model/RomanNumber.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="e#60#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
@@ -2904,9 +3173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="17" />
-          <folding>
-            <element signature="e#42#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2914,9 +3180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#62#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2925,23 +3188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="17" />
-          <folding>
-            <element signature="e#42#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/UseCase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -2952,6 +3198,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.groovy" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -2959,37 +3220,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/UseCase.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/presentation/MainPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/presentation/MainPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/model/RomanNumberTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding>
-            <element signature="e#62#110#0" expanded="true" />
+            <element signature="e#55#102#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/model/RomanNumber.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="199">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#60#108#0" expanded="true" />
+            <element signature="e#55#250#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCase.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="282">
+          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertRomanToArabicUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/crobicha/com/romannumeralandroid/domain/interactor/ConvertArabicToRomanUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="e#60#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

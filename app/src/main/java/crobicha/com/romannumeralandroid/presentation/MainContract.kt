@@ -6,11 +6,13 @@ package crobicha.com.romannumeralandroid.presentation
 interface MainContract {
 
     interface View {
-        fun showNumber():Int
+        fun showArabic():Int
+        fun showRoman():String
         fun showError():String
     }
 
     interface Presenter {
-        fun convertRomanToNumeric(roman:String)
+        fun convertRomanToArabic(roman:String)
+        fun convertArabicToRoman(arabic:Int)
     }
 }

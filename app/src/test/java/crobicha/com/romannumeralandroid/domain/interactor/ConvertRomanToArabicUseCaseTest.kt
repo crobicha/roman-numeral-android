@@ -6,40 +6,40 @@ import org.junit.Assert.*
 
 internal class ConvertRomanToArabicUseCaseTest {
 
-    private val useCaseRoman: ConvertRomanToArabicUseCase =
+    private val useCase: ConvertRomanToArabicUseCase =
         ConvertRomanToArabicUseCase()
 
     @Test
     fun testSingleChars() {
-        assertEquals(1, useCaseRoman.execute("I"))
-        assertEquals(5, useCaseRoman.execute("V"))
-        assertEquals(10, useCaseRoman.execute("X"))
+        assertEquals(1, useCase.execute("I"))
+        assertEquals(5, useCase.execute("V"))
+        assertEquals(10, useCase.execute("X"))
     }
 
     @Test
     fun testMultipleChars() {
-        assertEquals(2, useCaseRoman.execute("II"))
-        assertEquals(3, useCaseRoman.execute("III"))
-        assertEquals(30, useCaseRoman.execute("XXX"))
-        assertEquals(20, useCaseRoman.execute("XX"))
+        assertEquals(2, useCase.execute("II"))
+        assertEquals(3, useCase.execute("III"))
+        assertEquals(30, useCase.execute("XXX"))
+        assertEquals(20, useCase.execute("XX"))
     }
 
     @Test
     fun testAddition() {
-        assertEquals(16, useCaseRoman.execute("XVI"))
+        assertEquals(16, useCase.execute("XVI"))
     }
 
     @Test
     fun testSubtracting() {
-        assertEquals(9, useCaseRoman.execute("IX"))
-        assertEquals(4, useCaseRoman.execute("IV"))
+        assertEquals(9, useCase.execute("IX"))
+        assertEquals(4, useCase.execute("IV"))
     }
 
     @Test
     fun testSpecialChars() {
-        assertNull(useCaseRoman.execute("0"))
-        assertNull(useCaseRoman.execute("X.X"))
-        assertNull(useCaseRoman.execute("X X"))
+        assertNull(useCase.execute("0"))
+        assertNull(useCase.execute("X.X"))
+        assertNull(useCase.execute("X X"))
     }
 
     @Test
@@ -52,24 +52,29 @@ internal class ConvertRomanToArabicUseCaseTest {
 
     @Test
     fun testMediumNumbers() {
-        assertEquals(39, useCaseRoman.execute("XXXIX"))
-        assertEquals(246, useCaseRoman.execute("CCXLVI"))
-        assertEquals(421, useCaseRoman.execute("CDXXI"))
+        assertEquals(39, useCase.execute("XXXIX"))
+        assertEquals(246, useCase.execute("CCXLVI"))
+        assertEquals(421, useCase.execute("CDXXI"))
     }
 
 
     @Test
     fun testLargeNumbers() {
-        assertEquals(1776, useCaseRoman.execute("MDCCLXXVI"))
-        assertEquals(1954, useCaseRoman.execute("MCMLIV"))
-        assertEquals(1990, useCaseRoman.execute("MCMXC"))
-        assertEquals(2014, useCaseRoman.execute("MMXIV"))
+        assertEquals(1776, useCase.execute("MDCCLXXVI"))
+        assertEquals(1954, useCase.execute("MCMLIV"))
+        assertEquals(1990, useCase.execute("MCMXC"))
+        assertEquals(2014, useCase.execute("MMXIV"))
+    }
+
+    @Test
+    fun testEdgeCases() {
+        assertEquals(3999, useCase.execute("MMMCMXCIX"))
     }
 
     @Test
     fun testMissingPlaces() {
-        assertEquals(160, useCaseRoman.execute("CLX"))
-        assertEquals(207, useCaseRoman.execute("CCVII"))
-        assertEquals(1066, useCaseRoman.execute("MLXVI"))
+        assertEquals(160, useCase.execute("CLX"))
+        assertEquals(207, useCase.execute("CCVII"))
+        assertEquals(1066, useCase.execute("MLXVI"))
     }
 }
